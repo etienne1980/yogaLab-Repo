@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ***************  prevent img from overflowing *************** */
+img{
+max-width:100%;
+}
+
+/* ***************   *************** */
+
+@font-face {
+    font-family: text_regular_style;
+    src: url(../asset/font/Poppins-Regular.woff) format('woff');
+
+}
+
+@font-face {
+    font-family: text_semibold_style;
+    src: url(../asset/font/Poppins-SemiBold.woff) format('woff');
+
+}
+
+@font-face {
+    font-family: text_bold_style;
+    src: url(../asset/font/Poppins-Bold.woff) format('woff');
+
+}
+
+
+
+:root{
+    /* text color */
+    --text-clr-primary:hsl(210, 11%, 71%);
+    --text-clr-highlight:hsl(144, 71%, 58%);
+    --active-link:hsl(189, 60%, 57%);
+    --clr-info-link:#92b6ec;
+
+    /* background color */
+    --background-clr-primary:hsl(210, 11%, 15%);
+    
+    /* buttons color */
+
+    --btn-clr-primary:hsl(0, 0%, 100%);
+    --btn-bg-primary:hsl(260, 77%, 43%);   
+    --btn-bg-primary200:hsl(260, 100%, 44%);
+   
+    --btn-nav: hsl(260, 79%, 55%);
+
+    
+    /* body dark theme */
+    --body-bg-dark:hsl(210, 10%, 24%);
+    
+}
+
+
+/* text colors */
+
+.text--primary{
+    color: var(--text-clr-primary);
+}
+
+.text--highlight{
+    color: var(--text-clr-highlight);
+}
+
+.bg--primary{
+    background: var(--background-clr-primary);
+}
+
+.body--dark{
+    background: var(--body-bg-dark);
+}
+
+.clr-info-link{
+    color: var(--clr-info-link);
+}
+
+/* buttons */
+
+.btn-clr--primary{
+    color: var(--btn-clr-primary);
+}
+
+.btn-bg--primary{
+    background: var(--btn-bg-primary);
+}
+
+.btn-nav{
+    background:var(--btn-nav) ;
+}
+
+a.card-btn:hover,
+button.card-btn:hover{
+    background:var(--btn-nav);
+    color: #000;
+}
+
+
+/* nav link */
+
+.nav-link:hover{
+    color: var(--text-clr-highlight)
+}
+
+.navbar-brand:hover{
+    color: #2e9be9;
+}
+
+/* typo */
+
+.font--regular{
+    font-family:text_regular_style,sans-serif;
+}
+
+.font--semib{
+    font-family:text_semibold_style,sans-serif;
+}
+
+.font--bold{
+    font-family:text_bold_style,sans-serif;
+}
+
+.active_link{
+    color:var(--active-link);
+}
+
+
+
+
